@@ -1,5 +1,5 @@
 <template>
-  <v-container class="fill-height grey lighten-5">
+  <v-container class="fill-height fill-width grey lighten-5">
     <v-row justify="center">
       <v-col cols="auto">
         <v-form v-model="isValid">

@@ -3,16 +3,7 @@
     v-bind="$attrs"
     app
   >
-    <section
-      class="pt-2 pb-2"
-    >
-      <v-list-item-content>
-        <v-list-item-title class="text-h6">
-          내일의 집
-        </v-list-item-title>
-        <!-- <v-list-item-subtitle> subtext </v-list-item-subtitle> -->
-      </v-list-item-content>
-    </section>
+    <drawer-header />
 
     <v-divider />
 
@@ -74,8 +65,12 @@
 </template>
 
 <script>
+import DrawerHeader from './DrawerHeader';
 export default {
   name: "DefaultDrawer",
+  components: {
+    DrawerHeader
+  },
   data() {
     return {
       items: [
