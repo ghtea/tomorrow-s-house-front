@@ -1,3 +1,4 @@
+import axios from 'axios';
 import router from "../../../router/index";
 import {applySignIn} from "./signIn";
 import {applySignOut} from "./signOut";
@@ -6,15 +7,15 @@ import {applySignOut} from "./signOut";
 export default async function signUp(context, sendingData) {
   try {
     const signUpData = await requestSignUp(sendingData);
-    applySignIn(signUpData);
+    applySignIn(context, signUpData);
   } catch (error) {
     console.debug(error);
-    applySignOut();
+    applySignOut(context);
   }
 }
 
 
-async function requestSignUp() {
+async function requestSignUp(sendingData) {
   try {
     const config = {
       url: `${process.env.VUE_APP_BACKEND_URL}/auth/sign-up`,
