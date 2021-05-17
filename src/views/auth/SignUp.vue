@@ -1,19 +1,43 @@
 <template>
-  <v-container class="fill-height">
+  <v-container class="fill-height grey lighten-5">
     <v-row justify="center">
       <v-col cols="auto">
-        <v-card width="460">
+        <v-card
+          width="460"
+          elevation="0"
+          outlined
+        >
           <v-card-text class="text-center px-12 py-12">
-            <v-btn text class="text-h4 font-weight-black mb-10" to="/">
-              <v-icon x-large color="primary" class="mr-2">
+            <v-btn
+              text
+              class="text-h4 font-weight-black mb-10"
+              to="/"
+            >
+              <v-icon
+                x-large
+                color="primary"
+                class="mr-2"
+              >
                 mdi-home-variant
               </v-icon>
               내일의 집
             </v-btn>
 
-            <v-text-field label="이메일" clearable outlined />
-            <v-text-field label="비밀번호" clearable outlined />
-            <v-text-field label="비밀번호 확인" clearable outlined />
+            <v-text-field
+              label="이메일"
+              clearable
+              outlined
+            />
+            <v-text-field
+              label="비밀번호"
+              clearable
+              outlined
+            />
+            <v-text-field
+              label="비밀번호 확인"
+              clearable
+              outlined
+            />
             <v-btn
               block
               x-large
@@ -25,8 +49,15 @@
               회원가입
             </v-btn>
 
-            <v-row align="center" justify="space-around" class="mt-2">
-              <v-btn text to="/auth/log-in">
+            <v-row
+              align="center"
+              justify="space-around"
+              class="mt-2"
+            >
+              <v-btn
+                text
+                to="/auth/sign-in"
+              >
                 로그인
               </v-btn>
             </v-row>

@@ -7,7 +7,7 @@ import AuthLayout from "../layouts/auth/Index";
 import SignIn from "../views/auth/SignIn";
 import SignUp from "../views/auth/SignUp";
 
-import ProductList from "../views/default/ProductList";
+import ProductList from "../views/main/ProductList";
 
 Vue.use(VueRouter);
 

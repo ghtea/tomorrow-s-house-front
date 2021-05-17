@@ -6,6 +6,9 @@ Vue.use(Vuetify);
 
 
 const option = {
+  breakpoint: {
+    mobileBreakpoint: 'xs' // This is equivalent to a value of 960
+  },
   icons: {
     iconfont: 'mdi',
   },

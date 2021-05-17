@@ -1,8 +1,12 @@
 <template>
-  <v-container class="fill-height">
+  <v-container class="fill-height grey lighten-5">
     <v-row justify="center">
       <v-col cols="auto">
-        <v-card width="460">
+        <v-card
+          width="460"
+          elevation="0"
+          outlined
+        >
           <v-card-text class="text-center px-12 py-12">
             <v-btn
               text
